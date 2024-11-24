@@ -3,13 +3,13 @@
 
 #include <string>
 
-const int MAX_SIZE = 0;  // TO DO: Define maximum number of provinces considering the problem at hand
+const int MAX_SIZE = 81;  // TO DO: Define maximum number of provinces considering the problem at hand
 
 class Map {
 
 public:
 
-    int distanceMatrix;      // TO DO: Define 2D distance matrix between provinces
+    int distanceMatrix[MAX_SIZE][MAX_SIZE];      // TO DO: Define 2D distance matrix between provinces
     bool visited[MAX_SIZE];  // Tracks visited provinces
 
     Map(); // Constructor to initialize the map

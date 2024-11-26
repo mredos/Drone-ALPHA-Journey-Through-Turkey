@@ -1,5 +1,5 @@
-Ankara (5)
-Istanbul (33)
-Izmir (34)
-Antalya (6)
-Bursa (15)
+5
+33
+34
+6
+15

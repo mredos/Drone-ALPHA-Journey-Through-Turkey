@@ -16,6 +16,7 @@ public:
     int maxDistance;              // Maximum allowed travel distance
     int totalDistanceCovered;     // Tracks the total distance of the route
     std::vector<int> route;       // Vector to store the route in order of visitation
+    std::vector<int> tempRoute;
 
     // Constants for priority and weather-restricted provinces
     static const int MAX_PRIORITY_PROVINCES = 10;

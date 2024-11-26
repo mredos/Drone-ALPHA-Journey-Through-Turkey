@@ -37,7 +37,7 @@ int Queue::dequeue() {
         return deletedProvince;
     }else {
         int deletedProvince = data[front];
-        front += 1;
+        front = (front+1) % MAX_QUEUE_SIZE;
         return deletedProvince;
     }
 
@@ -81,11 +81,12 @@ void Queue::enqueuePriority(int province) {
     }
 
     // TODO BURADA EKSIK VAR SORUN SU KI YA FRONT 0 OLURSA
-    if(front == 0) {
-        front = MAX_QUEUE_SIZE-1;
+    if (front == 0) {
+        front = MAX_QUEUE_SIZE - 1;
     }else {
         front -= 1;
     }
+
 
     data[front] = province;
 
